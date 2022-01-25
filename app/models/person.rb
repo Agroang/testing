@@ -7,4 +7,8 @@ class Person < ApplicationRecord
   def delete_surrounding_whitespaces(string)
     string.strip
   end
+
+  def full_name(first_name, last_name)
+    "#{first_name} #{last_name}"
+  end
 end
