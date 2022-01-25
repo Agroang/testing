@@ -16,4 +16,9 @@ RSpec.describe Person, type: :model do
   it 'should return the string hello' do
     expect(test_guy.hello).to eq('hello')
   end
+
+  # tests the full_name method to return the full name
+  it 'should return the full of the instance as first_name last_name' do
+    expect(test_guy.full_name(test_guy.first_name, test_guy.last_name)).to eq('Peter Rock')
+  end
 end
