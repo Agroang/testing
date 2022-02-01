@@ -31,4 +31,9 @@ RSpec.describe Person, type: :model do
   it 'test if the instance is of the Person class' do
     expect(test_guy).to be_instance_of(Person)
   end
+
+  # tests if the called method works for the instance
+  it 'tests if the #full_name is being called' do
+    expect(test_guy).to respond_to(:full_name)
+  end
 end
