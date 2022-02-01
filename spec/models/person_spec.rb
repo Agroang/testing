@@ -26,4 +26,9 @@ RSpec.describe Person, type: :model do
   it 'test if the instance has the module inside' do
     expect(test_guy).to be_a_kind_of(Foo) # Foo is a module included in Person
   end
+
+  # test if the instance is of the class Person
+  it 'test if the instance is of the Person class' do
+    expect(test_guy).to be_instance_of(Person)
+  end
 end
